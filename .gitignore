@@ -1,0 +1,87 @@
+To set up a .gitignore file for a .NET Core solution and avoid committing unnecessary files, such as those generated during the build process, you can follow these steps:
+
+Step-by-Step Guide
+1. 
+Create or Open .gitignore File:
+•  If you don't already have a .gitignore file in your repository, you can create one in the root directory of your solution.
+2. 
+Add Common .NET Core Ignored Files:
+•  You can use the following template to ignore common files and directories in a .NET Core project:
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2019
+.vs/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*.dll
+*.exe
+*.app
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.msm
+*.msp
+*.zip
+
+# Publish Web Output
+*.Publish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
