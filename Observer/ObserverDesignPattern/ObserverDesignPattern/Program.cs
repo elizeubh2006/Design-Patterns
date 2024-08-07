@@ -16,8 +16,7 @@
         void NotifyObservers(Request request);
     }
 
-    //Implement the Concrete Subject:
-
+    //Implement the Concrete Subject: Class that represent my Table repository (business layer) with the approvable requestes of truck entry
     public class RequestMonitor : IRequestMonitor
     {
         private List<IRequestObserver> observers = new List<IRequestObserver>();
@@ -120,8 +119,7 @@
         }
     }
 
-    //Define the Request Class:
-
+    //Define the Request Class: This repesents my table model
     public class Request
     {
         public int Id { get; set; }
