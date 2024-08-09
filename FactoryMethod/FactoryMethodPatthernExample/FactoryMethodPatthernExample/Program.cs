@@ -24,6 +24,7 @@
     {
         public abstract void GenerateFile(string reportData);
 
+        //Factory method that generate the concrete object directly
         public static GenerateReportFile CreateInstanceOf(ReportType reportType)
         {
             switch (reportType)
@@ -48,7 +49,7 @@
         }
     }
 
-    //Create Concrete Report Generators
+    //File Generate Modules - Create Concrete Report Generators
     public class GeneratePDF : GenerateReportFile
     {
         public override void GenerateFile(string reportData)
@@ -127,6 +128,7 @@
         {
             foreach (var reportType in reportTypes)
             {
+                //Create instance and use it
                 var reportGenerator = GenerateReportFile.CreateInstanceOf(reportType);
                 reportGenerator.GenerateFile(reportData);
             }
