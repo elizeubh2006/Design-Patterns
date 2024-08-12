@@ -4,7 +4,7 @@
     {
 
         //Define the Abstract Product Interface
-        public interface IReport
+        public interface IRelatedClassReport
         {
             void GenerateReport();
         }
@@ -12,7 +12,7 @@
         #region Classes with all sort of reports
         //Implement Concrete Products for Each Family
         //Operational and Administrative Costs Reports
-        public class FixedAndVariableCostsReport : IReport
+        public class FixedAndVariableCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -20,7 +20,7 @@
             }
         }
 
-        public class OperationalExpensesReport : IReport
+        public class OperationalExpensesReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -28,7 +28,7 @@
             }
         }
 
-        public class AdministrativeExpensesReport : IReport
+        public class AdministrativeExpensesReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -36,7 +36,7 @@
             }
         }
 
-        public class BudgetDeviationAnalysisReport : IReport
+        public class BudgetDeviationAnalysisReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -44,7 +44,7 @@
             }
         }
 
-        public class CostCenterAnalysisReport : IReport
+        public class CostCenterAnalysisReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -53,7 +53,7 @@
         }
 
         //Production and Materials Costs Reports
-        public class RawMaterialsCostsReport : IReport
+        public class RawMaterialsCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -61,7 +61,7 @@
             }
         }
 
-        public class ProductionEfficiencyReport : IReport
+        public class ProductionEfficiencyReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -69,7 +69,7 @@
             }
         }
 
-        public class VehicleCostReport : IReport
+        public class VehicleCostReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -77,7 +77,7 @@
             }
         }
 
-        public class ComponentCostReport : IReport
+        public class ComponentCostReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -85,7 +85,7 @@
             }
         }
 
-        public class WasteReductionReport : IReport
+        public class WasteReductionReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -93,7 +93,7 @@
             }
         }
 
-        public class EconomiesOfScaleReport : IReport
+        public class EconomiesOfScaleReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -102,7 +102,7 @@
         }
 
         //  Logistics and Transportation Costs Reports
-        public class LogisticsAndTransportationCostsReport : IReport
+        public class LogisticsAndTransportationCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -110,7 +110,7 @@
             }
         }
 
-        public class InventoryAndStorageCostsReport : IReport
+        public class InventoryAndStorageCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -118,7 +118,7 @@
             }
         }
 
-        public class JustInTimeSupplyAnalysisReport : IReport
+        public class JustInTimeSupplyAnalysisReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -127,7 +127,7 @@
         }
 
         //Labor and Supplier Costs Reports
-        public class LaborCostsReport : IReport
+        public class LaborCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -135,7 +135,7 @@
             }
         }
 
-        public class SupplierPerformanceReport : IReport
+        public class SupplierPerformanceReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -143,7 +143,7 @@
             }
         }
 
-        public class CostBenchmarkingReport : IReport
+        public class CostBenchmarkingReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -152,7 +152,7 @@
         }
 
         //Maintenance and Equipment Costs Reports
-        public class EquipmentTotalCostOfOwnershipReport : IReport
+        public class EquipmentTotalCostOfOwnershipReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -160,7 +160,7 @@
             }
         }
 
-        public class PreventiveAndCorrectiveMaintenanceCostsReport : IReport
+        public class PreventiveAndCorrectiveMaintenanceCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -168,7 +168,7 @@
             }
         }
 
-        public class ReprocessingAndScrapCostsReport : IReport
+        public class ReprocessingAndScrapCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -177,7 +177,7 @@
         }
 
         //Energy and Environmental Costs Reports
-        public class EnergyCostsReport : IReport
+        public class EnergyCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -185,7 +185,7 @@
             }
         }
 
-        public class EnvironmentalCostsImpactReport : IReport
+        public class EnvironmentalCostsImpactReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -194,7 +194,7 @@
         }
 
         //Warranty and Repair Costs Reports
-        public class WarrantyAndRepairCostsReport : IReport
+        public class WarrantyAndRepairCostsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -203,7 +203,7 @@
         }
 
         //Innovations and Technologies Costs Reports
-        public class TechnologyCostBenefitReport : IReport
+        public class TechnologyCostBenefitReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -212,7 +212,7 @@
         }
 
         //Product and Profitability Costs Reports
-        public class ProductProfitabilityAnalysisReport : IReport
+        public class ProductProfitabilityAnalysisReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -220,7 +220,7 @@
             }
         }
 
-        public class ImportedInputsCostsAnalysisReport : IReport
+        public class ImportedInputsCostsAnalysisReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -228,7 +228,7 @@
             }
         }
 
-        public class FutureCostsProjectionsReport : IReport
+        public class FutureCostsProjectionsReport : IRelatedClassReport
         {
             public void GenerateReport()
             {
@@ -242,7 +242,7 @@
         //Define the Abstract Factory Interface
         public interface IDirectoryReportAbstractFactory
         {
-            IReport CreateReport(string reportType);
+            IRelatedClassReport CreateInstanceOf(string concreteClassName);
         }
 
         #region All Factories
@@ -250,9 +250,9 @@
         //Operational and Administrative Costs Report Factory
         public class OperationalAndAdministrativeCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "FixedAndVariableCosts" => new FixedAndVariableCostsReport(),
                     "OperationalExpenses" => new OperationalExpensesReport(),
@@ -267,9 +267,9 @@
         //Production and Materials Costs Report Factory
         public class ProductionAndMaterialsCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "RawMaterialsCosts" => new RawMaterialsCostsReport(),
                     "ProductionEfficiency" => new ProductionEfficiencyReport(),
@@ -285,9 +285,9 @@
         //Logistics and Transportation Costs Report Factory
         public class LogisticsAndTransportationCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "LogisticsAndTransportationCosts" => new LogisticsAndTransportationCostsReport(),
                     "InventoryAndStorageCosts" => new InventoryAndStorageCostsReport(),
@@ -300,9 +300,9 @@
         //Labor and Supplier Costs Report Factory
         public class LaborAndSupplierCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "LaborCosts" => new LaborCostsReport(),
                     "SupplierPerformance" => new SupplierPerformanceReport(),
@@ -315,9 +315,9 @@
         //Maintenance and Equipment Costs Report Factory
         public class MaintenanceAndEquipmentCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "EquipmentTotalCostOfOwnership" => new EquipmentTotalCostOfOwnershipReport(),
                     "PreventiveAndCorrectiveMaintenanceCosts" => new PreventiveAndCorrectiveMaintenanceCostsReport(),
@@ -330,9 +330,9 @@
         //Energy and Environmental Costs Report Factory
         public class EnergyAndEnvironmentalCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "EnergyCosts" => new EnergyCostsReport(),
                     "EnvironmentalCostsImpact" => new EnvironmentalCostsImpactReport(),
@@ -344,9 +344,9 @@
         //Warranty and Repair Costs Report Factory
         public class WarrantyAndRepairCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "WarrantyAndRepairCosts" => new WarrantyAndRepairCostsReport(),
                     _ => throw new ArgumentException("Invalid report type"),
@@ -359,9 +359,9 @@
 
         public class InnovationsAndTechnologiesCostsReportFactory : IDirectoryReportAbstractFactory
         {
-            public IReport CreateReport(string reportType)
+            public IRelatedClassReport CreateInstanceOf(string concreteClassName)
             {
-                return reportType switch
+                return concreteClassName switch
                 {
                     "TechnologyCostBenefit" => new TechnologyCostBenefitReport(),
                     _ => throw new ArgumentException("Invalid report type"),
@@ -373,7 +373,7 @@
         static void Main(string[] args)
         {
             /// Simulate user requests
-            var userRequests = new List<(string family, string reportType)>
+            var userRequests = new List<(string family, string concreteClassName)>
                 {
                 ("OperationalAndAdministrativeCosts", "FixedAndVariableCosts"),
                 ("OperationalAndAdministrativeCosts", "OperationalExpenses"),
@@ -401,7 +401,7 @@
             {
                 if (factories.TryGetValue(request.family, out var factory))
                 {
-                    var report = factory.CreateReport(request.reportType);
+                    var report = factory.CreateInstanceOf(request.concreteClassName);
                     report.GenerateReport();
                 }
                 else
