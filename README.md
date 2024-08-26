@@ -5,6 +5,7 @@ Este repositório é uma contribuição para programadores iniciantes, com exemp
 ## Visão Geral
 
 A versão 1.0 deste repositório inclui os seguintes design patterns:
+
 •  Abstract Factory
 
 •  Chain of Responsibility
